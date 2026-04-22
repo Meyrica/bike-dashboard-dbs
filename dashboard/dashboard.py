@@ -23,7 +23,7 @@ df = df.drop(columns=[col for col in df.columns if '_y' in col]) # Hapus kolom d
 df['dteday'] = pd.to_datetime(df['dteday']) # perbaiki tipe data
 
 # SIDEBAR
-st.sidebar.image("logo.png", width=260) # Logo diambil dari Pinterest (bukan desain sendiri)
+st.sidebar.image("dashboard/logo.png", width=260) # Logo diambil dari Pinterest (bukan desain sendiri)
 # widget buat milih periode data yang mau dianalisis
 start_date = st.sidebar.date_input("Start Date", df['dteday'].min())
 end_date = st.sidebar.date_input("End Date", df['dteday'].max())
