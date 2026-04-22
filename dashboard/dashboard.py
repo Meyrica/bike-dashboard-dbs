@@ -6,7 +6,7 @@ import streamlit as st
 sns.set(style='dark')
 
 # baca data
-df = pd.read_csv('all_data.csv')
+df = pd.read_csv('dashboard/all_data.csv')
 
 # bersihkan kolom hasil merge
 df.rename(columns={
