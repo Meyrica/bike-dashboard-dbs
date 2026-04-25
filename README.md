@@ -1,18 +1,23 @@
 # bike-dashboard-dbs
 # Bike Rental Dashboard
-Dashboard ini dibuat menggunakan Streamlit untuk menganalisis data penyewaan sepeda berdasarkan waktu (hari dan jam).
+Dashboard ini dibuat menggunakan Streamlit untuk menganalisis data penyewaan sepeda berdasarkan waktu, cuaca, dan tipe pengguna.
 
 ## Fitur Dashboard
-- Filter data berdasarkan rentang tanggal
-- Visualisasi pola penyewaan berdasarkan hari
-- Visualisasi pola penyewaan berdasarkan jam
-- Analisis jumlah total penyewaan (cnt)
+- Analisis pengaruh cuaca terhadap penyewaan
+- Pola penyewaan berdasarkan jam (hari kerja vs hari libur)
+- Pola penyewaan berdasarkan hari
+- Perbandingan pengguna (casual vs registered)
+- Tren penyewaan per tahun dan per bulan
+- Distribusi kondisi cuaca setiap bulan
 
-## Setup Environment
-```
+## Setup Environment (Shell / Terminal)
+# 1. Buat virtual environment
+python -m venv venv
+# 2. Aktifkan environment
+venv\Scripts\activate
+# 3. Install dependencies
 pip install -r requirements.txt
-```
 
 ### Run streamlit dashboard
-```bash
+cd dashboard
 streamlit run dashboard.py
