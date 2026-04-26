@@ -7,7 +7,7 @@ import seaborn as sns
 st.title("Dasbor Analisis Penyewaan Sepeda")
 
 # baca data
-df = pd.read_csv('all_data.csv')
+df = pd.read_csv('dashboard/all_data.csv')
 
 df = df.rename(columns={
     'weathersit_x': 'weathersit',
@@ -24,7 +24,7 @@ df = df.rename(columns={
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 # SIDEBAR
-st.sidebar.image("logo.png", width=260) # Logo diambil dari Pinterest (bukan desain sendiri)
+st.sidebar.image("dashboard/logo.png", width=260) # Logo diambil dari Pinterest (bukan desain sendiri)
 
 # widget buat milih periode data yang mau dianalisis
 start_date = st.sidebar.date_input("Tanggal Mulai", df['dteday'].min())
