@@ -11,11 +11,12 @@ Dashboard ini dibuat menggunakan Streamlit untuk menganalisis data penyewaan sep
 - Distribusi kondisi cuaca setiap bulan
 
 ## Setup Environment (Shell / Terminal)
-# 1. Buat virtual environment
+cd submission/dashboard
+# Buat virtual environment
 python -m venv venv
-# 2. Aktifkan environment
+# Aktifkan environment
 venv\Scripts\activate
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
 ### Run streamlit dashboard
